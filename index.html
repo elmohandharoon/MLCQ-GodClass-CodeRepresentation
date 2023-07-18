@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+        /* Updated CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .section {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 20px;
+            background-color: #fff;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .page-links {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .page-link {
+            flex: 1 0 200px;
+            padding: 10px 15px;
+            background-color: #e0e0e0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .page-link:hover {
+            background-color: #ccc;
+        }
+        .content-container {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 20px;
+            background-color: #fff;
+            min-width: 250px;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(id) {
+            var sections = document.getElementsByClassName('content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <h1>MLCQ God Class Code Representation</h1>
+
+    <div class="section-container">
+        <div class="section-column">
+            <div class="section">
+                <h2>Evaluation Models</h2>
+                <div class="page-links">
+                    <a class="page-link" href="#" onclick="showContent('god-class-token')">Token Based</a>
+                    <a class="page-link" href="#" onclick="showContent('god-class-tree')">Tree Based</a>
+                    <a class="page-link" href="#" onclick="showContent('god-class-metric')">Metric Based</a>
+                    <a class="page-link" href="#" onclick="showContent('god-class-pretrained')">PreTrained</a>
+                    <a class="page-link" href="#" onclick="showContent('god-class-cubert')">CuBERT</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-column">
+            <div class="section">
+                <h2>Evaluation Approaches</h2>
+                <div class="page-links">
+                    <a class="page-link" href="#" onclick="showContent('eval-logreg')">Logistic Regression</a>
+                    <a class="page-link" href="#" onclick="showContent('eval-rforest')">Random Forest</a>
+                    <a class="page-link" href="#" onclick="showContent('eval-svm')">SVM</a>
+                    <a class="page-link" href="#" onclick="showContent('eval-dtree')">Decision Tree</a>
+                    <a class="page-link" href="#" onclick="showContent('eval-nbayes')">Naive Bayes</a>
+                    <a class="page-link" href="#" onclick="showContent('eval-gboost')">Gradient Boosting</a>
+                    <a class="page-link" href="#" onclick="showContent('eval-xgboost')">XGBoost</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+	
+	        <div id="god-class-cubert" class="content">
+            <object data="output_God_Class_CuBERT_Evaluation_Results.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_CuBERT_Evaluation_Results.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="god-class-token" class="content">
+            <object data="output_God_Class_Token_Based.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_Token_Based.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="god-class-tree" class="content">
+            <object data="output_God_Class_Tree_Based.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_Tree_Based.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="god-class-metric" class="content">
+            <object data="output_God_Class_Metric_Based.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_Metric_Based.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="god-class-pretrained" class="content">
+            <object data="output_God_Class_PreTrained.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_PreTrained.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="eval-logreg" class="content">
+            <object data="output_God_Class_Logistic_Regression.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_Logistic_Regression.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="eval-rforest" class="content">
+            <object data="output_God_Class_Random_Forest.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_Random_Forest.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="eval-svm" class="content">
+            <object data="output_God_Class_SVM.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_SVM.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="eval-dtree" class="content">
+            <object data="output_God_Class_Decision_Tree.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_Decision_Tree.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="eval-nbayes" class="content">
+            <object data="output_God_Class_Naive_Bayes.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_Naive_Bayes.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="eval-gboost" class="content">
+            <object data="output_God_Class_Gradient_Boosting.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_Gradient_Boosting.html">click here</a> to view it.</p>
+            </object>
+        </div>
+        <div id="eval-xgboost" class="content">
+            <object data="output_God_Class_XGBoost.html" width="100%" height="800px">
+                <p>Unable to display the content. Please <a href="output_God_Class_XGBoost.html">click here</a> to view it.</p>
+            </object>
+        </div>
+    </div>
+
+    <script>
+        function showContent(id) {
+            var sections = document.getElementsByClassName('content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

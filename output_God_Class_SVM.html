@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Representation Evaluation Approaches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .plot {
+      width: 600px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>MLCQ God Class SVM Evaluation Approaches</h1>
+
+  <h2>Comparison Table</h2>
+  <table>
+    <tr>
+      <th>Approach</th>
+      <th>Accuracy</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-score</th>
+    </tr>
+
+    <tr>
+      <td>Token Based</td>
+      <td>0.5754</td>
+      <td>0.2965</td>
+      <td>0.7089</td>
+      <td>0.4143</td>
+    </tr>
+
+    <tr>
+      <td>Tree Based</td>
+      <td>0.7425</td>
+      <td>0.4364</td>
+      <td>0.7161</td>
+      <td>0.5381</td>
+    </tr>
+
+    <tr>
+      <td>Metric Based</td>
+      <td>0.8054</td>
+      <td>0.5319</td>
+      <td>0.8172</td>
+      <td>0.6400</td>
+    </tr>
+
+    <tr>
+      <td>PreTrained</td>
+      <td>0.7831</td>
+      <td>0.4947</td>
+      <td>0.6976</td>
+      <td>0.5751</td>
+    </tr>
+
+</table>
+
+  <h2>Bar Plot</h2>
+  <div class="plot">
+    <img src="bar_plot_god_svm.png" alt="Bar Plot">
+  </div>
+
+  <h2>Evaluation Results</h2>
+
+    <h3>SVM - Token Based</h3>
+    <ul>
+      <li>Accuracy: 0.5754</li>
+      <li>Precision: 0.2965</li>
+      <li>Recall: 0.7089</li>
+      <li>F1-score: 0.4143</li>
+    </ul>
+
+    <h3>SVM - Tree Based</h3>
+    <ul>
+      <li>Accuracy: 0.7425</li>
+      <li>Precision: 0.4364</li>
+      <li>Recall: 0.7161</li>
+      <li>F1-score: 0.5381</li>
+    </ul>
+
+    <h3>SVM - Metric Based</h3>
+    <ul>
+      <li>Accuracy: 0.8054</li>
+      <li>Precision: 0.5319</li>
+      <li>Recall: 0.8172</li>
+      <li>F1-score: 0.6400</li>
+    </ul>
+
+    <h3>SVM - PreTrained</h3>
+    <ul>
+      <li>Accuracy: 0.7831</li>
+      <li>Precision: 0.4947</li>
+      <li>Recall: 0.6976</li>
+      <li>F1-score: 0.5751</li>
+    </ul>
+
+</body>
+</html>

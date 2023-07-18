@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Representation Evaluation Approaches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .plot {
+      width: 600px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>MLCQ God Class Random Forest Evaluation Approaches</h1>
+
+  <h2>Comparison Table</h2>
+  <table>
+    <tr>
+      <th>Approach</th>
+      <th>Accuracy</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-score</th>
+    </tr>
+
+    <tr>
+      <td>Token Based</td>
+      <td>0.8268</td>
+      <td>0.6810</td>
+      <td>0.3634</td>
+      <td>0.4707</td>
+    </tr>
+
+    <tr>
+      <td>Tree Based</td>
+      <td>0.7952</td>
+      <td>0.5290</td>
+      <td>0.4214</td>
+      <td>0.4661</td>
+    </tr>
+
+    <tr>
+      <td>Metric Based</td>
+      <td>0.8180</td>
+      <td>0.5656</td>
+      <td>0.6666</td>
+      <td>0.6079</td>
+    </tr>
+
+    <tr>
+      <td>PreTrained</td>
+      <td>0.7924</td>
+      <td>0.5148</td>
+      <td>0.5814</td>
+      <td>0.5431</td>
+    </tr>
+
+</table>
+
+  <h2>Bar Plot</h2>
+  <div class="plot">
+    <img src="bar_plot_god_random_forest.png" alt="Bar Plot">
+  </div>
+
+  <h2>Evaluation Results</h2>
+
+    <h3>Random Forest - Token Based</h3>
+    <ul>
+      <li>Accuracy: 0.8268</li>
+      <li>Precision: 0.6810</li>
+      <li>Recall: 0.3634</li>
+      <li>F1-score: 0.4707</li>
+    </ul>
+
+    <h3>Random Forest - Tree Based</h3>
+    <ul>
+      <li>Accuracy: 0.7952</li>
+      <li>Precision: 0.5290</li>
+      <li>Recall: 0.4214</li>
+      <li>F1-score: 0.4661</li>
+    </ul>
+
+    <h3>Random Forest - Metric Based</h3>
+    <ul>
+      <li>Accuracy: 0.8180</li>
+      <li>Precision: 0.5656</li>
+      <li>Recall: 0.6666</li>
+      <li>F1-score: 0.6079</li>
+    </ul>
+
+    <h3>Random Forest - PreTrained</h3>
+    <ul>
+      <li>Accuracy: 0.7924</li>
+      <li>Precision: 0.5148</li>
+      <li>Recall: 0.5814</li>
+      <li>F1-score: 0.5431</li>
+    </ul>
+
+</body>
+</html>
