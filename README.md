@@ -4,7 +4,7 @@
 
 This repository contains all resources related to the research titled **"A Study on the Effect of Code Representation Techniques on Machine Learning Results for God Class Code Smell Detection"**. The project investigates how different representations of source code affect the performance of various machine learning algorithms in detecting the God Class code smell. This includes the use of metric-based, token-based, tree-based, and code embedding techniques.
 
-We provide the final dataset, scripts for feature extraction, evaluation result visualizations, and an interactive web interface to navigate the evaluation results. The work aims to support reproducibility and future extensions by the research and developer community.
+We provide the final dataset, scripts for metric features extraction, evaluation result visualizations, and an interactive web interface to navigate the evaluation results. The work aims to support reproducibility and future extensions by the research and developer community.
 
 ---
 
