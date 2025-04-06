@@ -22,7 +22,7 @@ The results highlight how representation techniques affect detection performance
 
 ## Repository Structure
 
-├── data/ # Final labeled dataset (CSV) ├── scripts/ # Metric calculation code ├── visualizations/ # Evaluation bar plots per model and representation ├── web_interface/ # HTML reports and index for interactive results └── README.md # Project overview and instructions
+├── data/ # Final labeled dataset (CSV) ├── scripts/ # Metric calculation code ├── visualizations/ # Evaluation bar plots per model and representation ├── docs/ # HTML reports and index for interactive results └── README.md # Project overview and instructions
 
 
 ---
@@ -32,7 +32,7 @@ The results highlight how representation techniques affect detection performance
 - `data/god_class_df.csv`: Final dataset of 2148 samples (1687 nonsmelly, 461 smelly).
 - `scripts/godclass_metricbased.py`: Python script used to calculate metric-based features.
 - `visualizations/*.png`: Bar plots showing model performance using different code representations.
-- `web_interface/*.html`: Pre-generated evaluation reports and an `index.html` to explore them interactively.
+- `docs/*.html`: Pre-generated evaluation reports and an `index.html` to explore them interactively.
 
 ---
 
@@ -50,7 +50,7 @@ The results highlight how representation techniques affect detection performance
 4. **Browse the Web Interface**  
    A user-friendly interface is available at  
    👉 **[GitHub Pages Web Interface](https://elmohandharoon.github.io/MLCQ-GodClass-CodeRepresentation/)**  
-   Alternatively, open `web_interface/index.html` in a browser.
+   Alternatively, open `docs/index.html` in a browser.
 
 ---
 
